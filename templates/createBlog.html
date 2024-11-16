@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <h1 class="">Ingresa los datos</h1>
+    <form class="h-[300px]" method="POST">
+        {% csrf_token %}
+        <div>
+            {{form.as_p}}
+            <button type="submit" class="bg-black text-white px-10 rounded-md">
+                Enviar
+            </button>
+        </div>
+    </form>
+
+
+{% endblock content %}
+
+
+
